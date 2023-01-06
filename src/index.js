@@ -13,7 +13,6 @@ root.render(
   <React.StrictMode>
     <Nav />
     <Header />
-    <History/>
     <Products/>
     <Contact/>  
   </React.StrictMode>

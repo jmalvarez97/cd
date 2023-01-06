@@ -28,8 +28,8 @@ Colors:
 - Backgrounds - light gray #f9fafe
 - Headings text - black #191e47
 - Body text - dark gray #6c717b
-- Buttons, icons - blue #4555d2
-- Buttons, icons, bullets - red #cc2973
+- Buttons, icons - blue #0c9d7c
+- Buttons, icons, bullets - red #0c9d7c
 ******************************************/
 
 
@@ -135,7 +135,7 @@ a:hover {
 }
 
 .blue {
-	color: #4555d2;
+	color: #0c9d7c;
 }
 
 .bg-gray {
@@ -145,9 +145,9 @@ a:hover {
 .btnSolidReg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #4555d2;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
-	background-color: #4555d2;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -158,16 +158,16 @@ a:hover {
 
 .btnSolidReg:hover {
 	background-color: transparent;
-	color: #4555d2; /* needs to stay here because of the color property of a tag */
+	color: #0c9d7c; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btnSolidLg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #4555d2;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
-	background-color: #4555d2;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -178,17 +178,17 @@ a:hover {
 
 .btnSolidLg:hover {
 	background-color: transparent;
-	color: #4555d2; /* needs to stay here because of the color property of a tag */
+	color: #0c9d7c; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #cc2973;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #cc2973;
+	color: #0c9d7c;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -197,7 +197,7 @@ a:hover {
 }
 
 .btn-outline-reg:hover {
-	background-color: #cc2973;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -205,10 +205,10 @@ a:hover {
 .btnOutlineLg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #cc2973;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #cc2973;
+	color: #0c9d7c;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -217,7 +217,7 @@ a:hover {
 }
 
 .btnOutlineLg:hover {
-	background-color: #cc2973;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -225,10 +225,10 @@ a:hover {
 .btnOutlineSm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #cc2973;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
 	background-color: transparent;
-	color: #cc2973;
+	color: #0c9d7c;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -237,7 +237,7 @@ a:hover {
 }
 
 .btnOutlineSm:hover {
-	background-color: #cc2973;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -281,9 +281,9 @@ a:hover {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #4555d2;
+	border: 1px solid #0c9d7c;
 	border-radius: 30px;
-	background-color: #4555d2;
+	background-color: #0c9d7c;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -293,9 +293,9 @@ a:hover {
 }
 
 .formControlSubmit:hover {
-	border: 1px solid #4555d2;
+	border: 1px solid #0c9d7c;
 	background-color: transparent;
-	color: #4555d2;
+	color: #0c9d7c;
 }
 
 
@@ -317,7 +317,7 @@ a:hover {
 
 .navbar .logoImage {
     width: 124px;
-	height: 32px;
+	height: 82px;
 }
 
 
@@ -359,7 +359,7 @@ a:hover {
 .navbar .navItem.dropdown.show .navLink,
 .navbar .navItem .navLink:hover,
 .navbar .navItem .navLink.active {
-	color: #4555d2;
+	color: #0c9d7c;
 }
 
 /* Dropdown Menu */
@@ -396,7 +396,7 @@ a:hover {
 
 .navbar .dropdown-item:hover {
 	background-color: #ffffff;
-	color: #4555d2;
+	color: #0c9d7c;
 }
 
 .navbar .dropdown-divider {
@@ -413,6 +413,8 @@ a:hover {
 	border: none;
 	font-size: 1.25rem;
 }
+
+
 
 
 /*****************/
@@ -470,216 +472,15 @@ a:hover {
 	margin-top: 5rem;
 }
 
-
-/**********************/
-/*     Statistics     */
-/**********************/
-.counter {
-	padding-top: 4.5rem;
-	padding-bottom: 5.5rem;
+.rightColumn{
 	text-align: center;
 }
 
-.counter .counter-cell {
-	margin-bottom: 4rem;
+.piggy{
+	width: 500px;
+	height: auto;
 }
 
-.counter .purecounter {
-	margin-bottom: 1.5rem;
-	color: #191e47;
-	font-weight: 400;
-	font-size: 4rem;
-	line-height: 2rem;
-}
-
-.counter .counter-info {
-	color: #6d717a;
-	font-size: 0.875rem;
-	line-height: 1.5rem;
-}
-
-
-/************************/
-/*     Introduction     */
-/************************/
-.basic-1 {
-	padding-top: 9.25rem;
-	padding-bottom: 8.75rem;
-}
-
-.basic-1 h2 {
-	margin-bottom: 1.75rem;
-}
-
-
-/*********************/
-/*     Details 1     */
-/*********************/
-.basic2 {
-	position: relative;
-	padding-top: 9.5rem;
-	padding-bottom: 9.5rem;
-}
-
-.basic2 .decorationStar {
-	position: absolute;
-	top: 530px;
-	left: -100px;
-	width: 200px;
-	opacity: 0.7;
-}
-
-.basic2 div[class*="col"] {  
-	/* selects all elements which have classes starting with col */
-	/* needed so that the absolute positioned decoration stays behind */
-	position: relative;
-}
-
-.basic2 .imageContainer {
-	margin-bottom: 5rem;
-}
-
-.basic2 h2 {
-	margin-bottom: 1.875rem;
-}
-
-.basic2 .listUndestyled {
-	margin-bottom: 2rem;
-}
-
-.basic2 .listUndestyled .fas {
-	color: #cc2973;
-	font-size: 0.375rem;
-	line-height: 1.625rem;
-}
-
-.basic2 .listUndestyled .flex-grow-1 {
-	margin-left: 0.5rem;
-}
-
-
-/********************/
-/*     Services     */
-/********************/
-.cards-1 {
-	padding-top: 9.5rem;
-	padding-bottom: 5.5rem;
-}
-
-.cards-1 h2 {
-	margin-bottom: 1.75rem;
-}
-
-.cards-1 .textContainer {
-	margin-bottom: 5rem;
-}
-
-.cards-1 .listUndestyled {
-	margin-top: 1.5rem;
-}
-
-.cards-1 .listUndestyled .fas {
-	color: #cc2973;
-	font-size: 0.375rem;
-	line-height: 1.625rem;
-}
-
-.cards-1 .listUndestyled .flex-grow-1 {
-	margin-left: 0.5rem;
-}
-
-.cards-1 .card-container {
-	text-align: center;
-}
-
-.cards-1 .card {
-	display: inline-block;
-	margin-right: 1.5rem;
-	margin-bottom: 3.75rem;
-	margin-left: 1.5rem;
-	width: 150px;
-	border: none;
-	background-color: transparent;
-	text-align: center;
-	vertical-align: top;
-}
-
-.cards-1 .card-icon {
-	width: 90px;
-	height: 90px;
-	margin-right: auto;
-	margin-bottom: 1.5rem;
-	margin-left: auto;
-	border-radius: 50%;
-	background-color: #ffffff;
-	text-align: center;
-}
-
-.cards-1 .card-icon .far,
-.cards-1 .card-icon .fas {
-	margin-left: 2rem;
-	color: #cc2973;
-	font-size: 3.75rem;
-}
-
- .cardBody {
-	padding: 0;
-}
-
- .cardTitle {
-	font-weight: 600;
-}
-
-
-/*********************/
-/*     Details 2     */
-/*********************/
-.basic-3 {
-	position: relative;
-	overflow: hidden;
-	padding-top: 9.5rem;
-	padding-bottom: 9.75rem;
-}
-
-.basic-3 .decorationStar {
-	position: absolute;
-	top: 500px;
-	right: -100px;
-	width: 200px;
-	opacity: 0.7;
-}
-
-.basic-3 div[class*="col"] {  
-	/* selects all elements which have classes starting with col */
-	/* needed so that the absolute positioned decoration stays behind */
-	position: relative;
-}
-
-.basic-3 .textContainer {
-	margin-bottom: 5rem;
-}
-
-.basic-3 h2 {
-	margin-bottom: 1.875rem;
-}
-
-.basic-3 p {
-	margin-bottom: 2rem;
-}
-
-
-/**********************/
-/*     Invitation     */
-/**********************/
-.basic-4 {
-	padding-top: 9.25rem;
-	padding-bottom: 9.75rem;
-	text-align: center;
-}
-
-.basic-4 h4 {
-	margin-bottom: 2rem;
-}
 
 
 /********************/
@@ -711,71 +512,6 @@ a:hover {
 .cards2 .cardBody {
 	padding: 0;
 }
-
-
-/************************/
-/*     Testimonials     */
-/************************/
-.slider-1 {
-	position: relative;
-	padding-top: 9.75rem;
-	padding-bottom: 9.75rem;
-}
-
-.slider-1 .quotes-decoration {
-	position: absolute;
-	top: 0;
-	left: 15px;
-	width: 120px;
-	opacity: 0.2;
-}
-
-.slider-1 .slider-container {
-	position: relative;
-}
-
-.slider-1 .swiper-container {
-	position: static;
-	width: 86%;
-	text-align: center;
-}
-
-.slider-1 .swiper-button-prev:focus,
-.slider-1 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
-	outline: none;
-}
-
-.slider-1 .swiper-button-prev {
-	left: -10px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 .swiper-button-next {
-	right: -10px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23707375'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 .testimonial-image {
-	width: 120px;
-	height: 120px;
-	margin-bottom: 2.25rem;
-	border-radius: 50%;
-}
-
-.slider-1 .testimonial-text {
-	margin-bottom: 1.75rem;
-	font-size: 1.25rem;
-	line-height: 2rem;
-}
-
-.slider-1 .testimonial-author {
-	margin-bottom: 0.25rem;
-	color: #2b2b4f;
-}
-
 
 /*******************/
 /*     Contact     */
@@ -864,12 +600,12 @@ a:hover {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-	color: #4555d2;
+	color: #0c9d7c;
 	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-	color: #4555d2;
+	color: #0c9d7c;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -920,60 +656,6 @@ a:hover {
 }
 
 
-/***********************/
-/*     Extra Pages     */
-/***********************/
-.ex-header {
-	padding-top: 8.5rem;
-	padding-bottom: 4rem;
-}
-
-.ex-basic-1 .listUndestyled .fas {
-	color: #cc2973;
-	font-size: 0.375rem;
-	line-height: 1.625rem;
-}
-
-.ex-basic-1 .listUndestyled .flex-grow-1 {
-	margin-left: 0.5rem;
-}
-
-.ex-basic-1 .text-box {
-	padding: 1.25rem 1.25rem 0.5rem 1.25rem;
-	background-color: #f9fafe;
-}
-
-.ex-cards-1 .card {
-	border: none;
-	background-color: transparent;
-}
-
-.ex-cards-1 .card .fa-stack {
-	width: 2em;
-	font-size: 1.125rem;
-}
-
-.ex-cards-1 .card .fa-stack-2x {
-	color: #cc2973;
-}
-
-.ex-cards-1 .card .fa-stack-1x {
-	width: 2em;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 2.125rem;
-}
-
-.ex-cards-1 .card .listUndestyled .flex-grow-1 {
-	margin-left: 2.25rem;
-}
-
-.ex-cards-1 .card .listUndestyled .flex-grow-1 h5 {
-	margin-top: 0.125rem;
-	margin-bottom: 0.5rem;
-}
-
-
 /*************************/
 /*     Media Queries     */
 /*************************/	
@@ -1000,24 +682,7 @@ a:hover {
 	/* end of header */
 
 
-	/* Statistics */
-	.counter .counter-cell {
-		display: inline-block;
-		margin-right: 1.5rem;
-		margin-left: 1.5rem;
-		vertical-align: top;
-	}
-	/* end of statistics */
-
-
-	/* Services */
-	.cards-1 .card {
-		margin-right: 2rem;
-		margin-left: 2rem;
-	}
-	/* end of services */
-
-
+	
 	/* Contact */
 	.formOne .decorationStar {
 		left: -150px;
@@ -1031,11 +696,7 @@ a:hover {
 	/* end of contact */
 
 
-	/* Extra Pages */
-	.ex-basic-1 .text-box {
-		padding: 1.75rem 2rem 0.875rem 2rem;
-	}
-	/* end of extra pages */
+	
 }
 /* end of min-width 768px */
 
@@ -1147,62 +808,7 @@ a:hover {
 	/* end of header */
 
 
-	/* Statistics */
-	.counter .purecounter {
-		font-size: 6rem;
-		line-height: 4rem;
-	}
-	/* end of statistics */
-
-
-	/* Introduction */
-	.basic-1 h2 {
-		width: 90%;
-	}
-	/* end of introduction */
-
-
-	/* Details 1 */
-	.basic2 .decorationStar {
-		top: 260px;
-		left: -150px;
-		width: 300px;
-	}
-
-	.basic2 .imageContainer {
-		margin-bottom: 0;
-	}
-	/* end of details 1 */
-
-
-	/* Services */
-	.cards-1 .textContainer {
-		margin-bottom: 0;
-	}
-	/* end of services */
-
-
-	/* Details 2 */
-	.basic-3 .decorationStar {
-		top: 260px;
-		right: -150px;
-		width: 300px;
-	}
-
-	.basic-3 .imageContainer {
-		text-align: right;
-	}
-	/* end of details 2 */
-
-
-	/* Invitation */
-	.basic-4 h4 {
-		width: 48rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of invitation */
-
+	
 
 	/* Projects */
 	.cards2 .card {
@@ -1271,18 +877,7 @@ a:hover {
 	/* end of footer */
 
 
-	/* Extra Pages */
-	.ex-cards-1 .card {
-		display: inline-block;
-		width: 296px;
-		vertical-align: top;
-	}
-
-	.ex-cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 1rem;
-		margin-left: 1rem;
-	}
-	/* end of extra pages */
+	
 }
 /* end of min-width 992px */
 
@@ -1325,88 +920,9 @@ a:hover {
 	}
 
 	.header .imageContainer {
-		text-align: right;
+		text-align: center;
 	}
 	/* end of header */
-
-
-	/* Statistics */
-	.counter .counter-cell {
-		margin-right: 3.5rem;
-		margin-left: 3.5rem;
-		width: 180px;
-	}
-	
-	.counter .counter-cell:first-of-type {
-		margin-left: 0;
-	}
-
-	.counter .counter-cell:last-of-type {
-		margin-right: 0;
-	}
-
-	.counter .purecounter {
-		font-size: 6.75rem;
-		line-height: 4.5rem;
-	}
-	/* end of statistics */
-
-
-	/* Details 1 */
-	.basic2 .decorationStar {
-		top: 140px;
-		left: -200px;
-		width: 500px;
-	}
-
-	.basic2 .textContainer {
-		margin-top: 5rem;
-		margin-left: 2.5rem;
-	}
-
-	.basic2 h2 {
-		width: 90%;
-	}
-	/* end of details 1 */
-
-
-	/* Services */
-	.cards-1 .textContainer {
-		margin-top: 2rem;
-		margin-right: 4.75rem;
-	}
-
-	.cards-1 .card {
-		margin-right: 2.25rem;
-		margin-left: 2.25rem;
-	}
-
-	.cards-1 .card:nth-of-type(3n+1) {
-		margin-left: 0;
-	}
-	
-	.cards-1 .card:nth-of-type(3n+3) {
-		margin-right: 0;
-	}
-	/* end of services */
-
-
-	/* Details 2 */
-	.basic-3 .decorationStar {
-		top: 140px;
-		right: -200px;
-		width: 500px;
-	}
-
-	.basic-3 .textContainer {
-		margin-top: 6rem;
-		margin-right: 3rem;
-	}
-
-	.basic-3 h2 {
-		width: 95%;
-	}
-	/* end of details 2 */
 
 
 	/* Projects */

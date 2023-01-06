@@ -5,21 +5,24 @@ import project3 from "../static/images/project-3.jpg"
 import project4 from "../static/images/project-4.jpg"
 import project5 from "../static/images/project-5.jpg"
 import project6 from "../static/images/project-6.jpg"
+import { ReactComponent as Decoration } from "../static/images/decoration-star.svg";
 
 
 const Products = () => {
     return (
     <div className="ProductsContainer">
             
-        <div id="projects" className={styles.cards2}>
+        <div id="products" className={styles.cards2}>
+            {/* <Decoration className={styles.decorationStar} />
+            <Decoration className={styles.decorationStarTwo} /> */}
             <div className={`${styles.container} container`}>
                 <div className="row">
-                    <div className={`col-lg-12 ${styles.col}`}>
-                        <h2 className={`h2-heading ${styles.h2Heading}`}>Projects we developed</h2>
+                    <div className={`col-lg-12`}>
+                        <h2 className={`h2-heading ${styles.h2Heading}`}>Nuestros productos</h2>
                     </div> 
                 </div> 
                 <div className="row">
-                    <div className={`col-lg-12 ${styles.col}`}>
+                    <div className={`col-lg-12`}>
 
                         
                         <div className={`card ${styles.card}`}>

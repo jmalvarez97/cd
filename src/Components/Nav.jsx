@@ -1,5 +1,5 @@
-import { ReactComponent as Logo } from "../static/images/logo.svg";
 import styles from "../styles/main.module.css"
+import logo from "../static/images/logo.png"
 
 
 const Nav = () => {
@@ -8,10 +8,7 @@ const Nav = () => {
             <nav id="navbarExample" className={`navbar navbar-expand-lg fixed-top navbar-light ${styles.navbar}`} aria-label="Main navigation">
                 <div className={`container ${styles.container}`}>
 
-                    <Logo
-                        className={`navbar-brand logo-image ${styles.navbar} ${styles.navbarBrand} ${styles.logoImage}`}
-                        href="index.html" 
-                    />
+                    <img src={logo} className={`navbar-brand logo-image ${styles.navbar} ${styles.navbarBrand} ${styles.logoImage}`} />
                     
                     <button className={`navbar-toggler p-0 border-0 ${styles.navbarToggler}`} type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -23,14 +20,11 @@ const Nav = () => {
                                 <a className={`nav-link ${styles.navLink} ${styles.navbar}`} href="#header">Home</a>
                             </li>
                             <li className={`nav-item ${styles.navItem} ${styles.navbar}`}>
-                                <a className={`nav-link ${styles.navLink} ${styles.navbar}`} href="#details">Details</a>
-                            </li>
-                            <li className={`nav-item ${styles.navItem} ${styles.navbar}`}>
-                                <a className={`nav-link ${styles.navLink} ${styles.navbar}`} href="#projects">Projects</a>
+                                <a className={`nav-link ${styles.navLink} ${styles.navbar}`} href="#products">Productos</a>
                             </li>
                         </ul>
                         <span className={`nav-item ${styles.navItem} ${styles.navbar}`}>
-                            <a className={`btn-outline-sm ${styles.btnOutlineSm} ${styles.navbar}`} href="#contact">Contact us</a>
+                            <a className={`btn-outline-sm ${styles.btnOutlineSm} ${styles.navbar}`} href="#contact">Contacto</a>
                         </span>
                     </div> 
                 </div> 
