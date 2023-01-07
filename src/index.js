@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Header from "./Components/Header"
 import Nav from "./Components/Nav"
-import History from './Components/History';
 import Products from './Components/Products'
 import Contact from './Components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';

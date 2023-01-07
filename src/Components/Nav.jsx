@@ -8,7 +8,7 @@ const Nav = () => {
             <nav id="navbarExample" className={`navbar navbar-expand-lg fixed-top navbar-light ${styles.navbar}`} aria-label="Main navigation">
                 <div className={`container ${styles.container}`}>
 
-                    <img src={logo} className={`navbar-brand logo-image ${styles.navbar} ${styles.navbarBrand} ${styles.logoImage}`} />
+                    <img src={logo} className={`navbar-brand logo-image ${styles.navbar} ${styles.navbarBrand} ${styles.logoImage}`} alt=""/>
                     
                     <button className={`navbar-toggler p-0 border-0 ${styles.navbarToggler}`} type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

@@ -223,8 +223,8 @@ a:hover {
 }
 
 .btnOutlineSm {
-	display: inline-block;
-	padding: 1rem 1.5rem 1rem 1.5rem;
+	/* display: inline-block; */
+	padding: 1rem; 
 	border: 1px solid #0c9d7c;
 	border-radius: 30px;
 	background-color: transparent;
@@ -513,6 +513,15 @@ a:hover {
 	padding: 0;
 }
 
+.cardContainer{
+	text-align: center;
+}
+
+.btnVerMas{
+	width: 20px;
+	text-align: center;
+}
+
 /*******************/
 /*     Contact     */
 /*******************/
@@ -680,7 +689,7 @@ a:hover {
 		width: 400px;
 	}
 	/* end of header */
-
+	
 
 	
 	/* Contact */
@@ -1002,3 +1011,12 @@ a:hover {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+@media (max-width: 992px) {
+
+	.piggy{
+		display: none;
+	}
+
+
+}
