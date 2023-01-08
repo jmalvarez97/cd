@@ -92,6 +92,24 @@ h6 {
 	line-height: 1.375rem;
 }
 
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+select:required:invalid {
+	color: #666;
+  }
+  option[value=""][disabled] {
+	display: none;
+  }
+  option {
+	color: #000;
+  }
+
 .pLarge {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
@@ -247,8 +265,22 @@ a:hover {
 	margin-bottom: 1.25rem;
 }
 
+/* .formControlSelect{
+	width: 100%;
+	padding-top: 0.875rem;
+	padding-bottom: 0.875rem;
+	padding-left: 1.5rem;
+	border: 1px solid #cbcbd1;
+	border-radius: 30px;
+	background-color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	-webkit-appearance: none; 
+} */
+
 .formControlInput,
-.formControlTextArea {
+.formControlTextArea,
+.formControlSelect {
 	width: 100%;
 	padding-top: 0.875rem;
 	padding-bottom: 0.875rem;
@@ -261,9 +293,10 @@ a:hover {
 	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
+
 .formControlTextArea {
 	display: block;
-	height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
 }
 
 .formControlInput:focus,
@@ -296,6 +329,20 @@ a:hover {
 	border: 1px solid #0c9d7c;
 	background-color: transparent;
 	color: #0c9d7c;
+}
+
+.networkUl{
+	display: flex;
+	justify-content: center;
+}
+
+.networkP{
+	padding-left: 10px;
+	
+}
+
+.contactIcons{
+	color: black;
 }
 
 
@@ -481,6 +528,9 @@ a:hover {
 	height: auto;
 }
 
+.piggyContact{
+	display: none;
+}
 
 
 /********************/
@@ -568,7 +618,11 @@ a:hover {
 .mapContainer{
 	width: 600px;
 	height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
 }
+
+
 
 /******************/
 /*     Footer     */
@@ -986,6 +1040,8 @@ a:hover {
 	.formOne h2 {
 		width: 82%;
 	}
+
+
 	/* end of contact */
 
 
@@ -1018,11 +1074,42 @@ a:hover {
 }
 /* end of min-width 1200px */
 
-@media (max-width: 992px) {
+
+@media (max-width: 1200px) {
 
 	.rightColumn{
 		display: none;
 	}
 
+	
+	.mapContainer{
+		width: 400px;
+		height: 400px;
+		overflow:hidden;
+	}
 
+	.piggyContact{
+		display:flex;
+		padding-top: 5em;
+		margin: 0 auto;
+		width: 350px;
+		height: auto;
+	}
+	
 }
+
+@media (max-width : 700px){
+
+	.mapContainer{
+		width: 300px;
+		height: 300px;
+		overflow:hidden;
+
+	}
+
+	
+
+
+	
+
+}	
