@@ -20,7 +20,7 @@ const Header = () => {
                   Buenos Aires, se dedica a la elaboración de
                   embutidos de cerdo. Nuestros productos son elegidos por la
                   gente gracias a la combinación exclusiva de ingredientes y
-                  nuestra minuciosa dedicación a su elaboración. Utilizamos
+                  nuestra minuciosa dedicación en su elaboración. Utilizamos
                   materias primas de excelente calidad y tenemos un sistema de
                   distribución propio que nos permite satisfacer la creciente
                   demanda de nuestros clientes en la provincia de Buenos Aires.

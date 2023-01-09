@@ -15,7 +15,7 @@ const Products = () => {
             <div className={`${styles.container} container`}>
                 <div className="row">
                     <div className={`col-lg-12`}>
-                        <h2 className={`h2-heading ${styles.h2Heading}`}>Nuestros productos</h2>
+                        <h1 className={`h1-heading ${styles.h2Heading}`}>Nuestros Productos</h1>
                     </div> 
                 </div> 
                 <div className={`row`}>

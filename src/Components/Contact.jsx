@@ -30,41 +30,43 @@ const Contact = () => {
                         <div className={`col-lg-6 ${styles.mapColumn}`}>
                             <div className={`${styles.imageContainer}`}>
 
-                            <h2>Donde nos ubicamos?</h2>
+                            <h1>Donde nos ubicamos?</h1>
 
                             <p>Sector Industrial II - Alberti - Pcia. de Buenos Aires</p>
 
+                            <div className="map">
+                                {useEffect(() => {
+                                    if (map.current) return; // initialize map only once
 
-                            {useEffect(() => {
-                                if (map.current) return; // initialize map only once
+                                    
+                                    map.current = new mapboxgl.Map({
+                                        container: mapContainer.current,
+                                        style: 'mapbox://styles/mapbox/streets-v12',
+                                        center: [-60.2890, -35.0430],
+                                        zoom: 12.20
+                                    });
 
-                                
-                                map.current = new mapboxgl.Map({
-                                    container: mapContainer.current,
-                                    style: 'mapbox://styles/mapbox/streets-v12',
-                                    center: [-60.2890, -35.0430],
-                                    zoom: 12.20
-                                });
+                                    var popup = new mapboxgl.Popup()
+                                                .setText(`Chacinados David`)
+                                                .addTo(map.current);
 
-                                var popup = new mapboxgl.Popup()
-                                            .setText(`Chacinados David`)
-                                            .addTo(map.current);
-
-                                new mapboxgl.Marker({
-                                    draggable : false,
-                                    color : "#0c9d7c"
-                                })
-                                            .setLngLat([-60.29572312809677,-35.03088234658322])
-                                            .addTo(map.current)
-                                            .setPopup(popup);
-                            })}
-                                        
-                            </div> 
-                            <div ref={mapContainer} className={styles.mapContainer} />
+                                    new mapboxgl.Marker({
+                                        draggable : false,
+                                        color : "#0c9d7c"
+                                    })
+                                                .setLngLat([-60.29572312809677,-35.03088234658322])
+                                                .addTo(map.current)
+                                                .setPopup(popup);
+                                })}
+                                            
+                                </div> 
+                                <div ref={mapContainer} className={styles.mapContainer} />
+                            </div>
+                          
                         </div> 
                         <div className={`${styles.col} col-lg-6`}>
                             <div className={`${styles.textContainer}`}>
-                                <h2>Contactanos para la venta de nuestros productos</h2>
+                                <h1>Contactanos para la venta de nuestros productos</h1>
                                 <form>
                                     <div className={`${styles.formGroup}`}>
                                         <input type="text" className={`${styles.formControlInput}`} placeholder="Nombre" required></input>
