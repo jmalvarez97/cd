@@ -1,21 +1,48 @@
 import styles from "../styles/main.module.css"
 import { ReactComponent as Decoration } from '../static/images/decoration-star.svg';
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import {BsInstagram} from "react-icons/bs" 
 import {AiOutlineWhatsApp} from "react-icons/ai"
 import chanchito from "../static/images/ch.png";
 
+import emailjs from "@emailjs/browser"
 
 import 'mapbox-gl/dist/mapbox-gl.css'; 
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax 
 mapboxgl.accessToken = 'pk.eyJ1Ijoiam1hbHYiLCJhIjoiY2xjbHh5eTNlMW02YTNwcDh6eHAwcW12MiJ9.16H6PbPrliW6jrtAWDmHHw';
 
 
+
 const Contact = () => {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
+    const form = useRef();
+
+    const [emailSent, setEmailSent] = useState(false);
+
+    const EmailSent = () => {
+        return (
+            <div className={styles.sent}>
+                <p>Informacion enviada!</p>
+            </div>
+        )
+    }
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_dl2e8rt', 'template_sioaphp', form.current, 'ntxsUWZliG1s1JlJB')
+          .then((result) => {
+              setEmailSent(true);
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+    
     
     return ( <div className="concactContainer">
             <div id="contact" className={`${styles.formOne}`}>
@@ -30,7 +57,7 @@ const Contact = () => {
                         <div className={`col-lg-6 ${styles.mapColumn}`}>
                             <div className={`${styles.imageContainer}`}>
 
-                            <h1>Donde nos ubicamos?</h1>
+                            <h2>Donde nos ubicamos?</h2>
 
                             <p>Sector Industrial II - Alberti - Pcia. de Buenos Aires</p>
 
@@ -66,23 +93,45 @@ const Contact = () => {
                         </div> 
                         <div className={`${styles.col} col-lg-6`}>
                             <div className={`${styles.textContainer}`}>
-                                <h1>Contactanos para la venta de nuestros productos</h1>
-                                <form>
+                                <h2>Contactanos para la venta de nuestros productos</h2>
+                                <form ref={form} onSubmit={sendEmail}>
                                     <div className={`${styles.formGroup}`}>
-                                        <input type="text" className={`${styles.formControlInput}`} placeholder="Nombre" required></input>
+                                        <input type="text" 
+                                               required
+                                               className={`${styles.formControlInput}`} 
+                                               placeholder="Nombre" 
+                                               name="name"
+                                               />
                                     </div>
                                     <div className={`${styles.formGroup}`}>
-                                        <input type="text" className={`${styles.formControlInput}`} placeholder="Telefono" required></input>
+                                        <input type="text"
+                                               required
+                                               className={`${styles.formControlInput}`} 
+                                               placeholder="Telefono"
+                                               name="phone" 
+                                               />
                                     </div>
                                     <div className={`${styles.formGroup}`}>
-                                        <input type="email" className={`${styles.formControlInput}`} placeholder="E-mail (opcional)"></input>
+                                        <input type="email" 
+                                               className={`${styles.formControlInput}`} 
+                                               placeholder="E-mail (opcional)"
+                                               name="email"
+                                               />
                                     </div>
                                     <div className={`${styles.formGroup}`}>
-                                        <textarea className={`${styles.formControlTextArea}`} placeholder="Mensaje"></textarea>
+                                        <input className={`${styles.formControlTextArea}`} 
+                                                  type='textarea'
+                                                  placeholder="Mensaje"
+                                                  name="message"
+                                                  
+                                                  />
                                     </div>
                                     <div className={`${styles.formGroup}`}>
                                         <button type="submit" className={`${styles.formControlSubmit}`}>Enviar</button>
                                     </div>
+                                    
+                                {emailSent ? <EmailSent /> : null}
+
                                 </form>
                                 <h2 className={styles.textContainer}>Nuestras Redes</h2>
                                 <div>
@@ -93,7 +142,7 @@ const Contact = () => {
                                 </div>
                                 <div className={styles.networkUl}>
                                     <AiOutlineWhatsApp className={styles.contactIcons}/>
-                                    <p className={styles.networkP}>+549 2346 555080</p>
+                                    <a href="https://api.whatsapp.com/send/?phone=5492346555080"> <p className={styles.networkP}>+549 2346 555080</p></a>
                                 </div>
                                 
                                 

@@ -6,6 +6,7 @@ import lomitoFH from "../static/images/products/lomitoFH.jpeg"
 import criollo from "../static/images/products/criollo.jpeg"
 import mortdadela from "../static/images/products/mortadela.jpeg"
 
+import pdf from "../static/CATALOGO.pdf"
 
 const Products = () => {
     return (
@@ -74,7 +75,8 @@ const Products = () => {
                         
                     </div> 
                     <a className={`btn-solid-lg ${styles.btnSolidLg} ${styles.btnVerMas}`}
-                        href="#contact">
+                        href={pdf} without rel="noopener noreferrer" target="_blank"
+                        >
                         Consultar todo el catalogo
                     </a>
                 </div> 
