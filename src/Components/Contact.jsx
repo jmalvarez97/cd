@@ -10,15 +10,18 @@ import emailjs from "@emailjs/browser"
 
 import 'mapbox-gl/dist/mapbox-gl.css'; 
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax 
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam1hbHYiLCJhIjoiY2xjbHh5eTNlMW02YTNwcDh6eHAwcW12MiJ9.16H6PbPrliW6jrtAWDmHHw';
 
 
 
-const Contact = () => {
+
+
+const Contact = ({mapboxToken, serviceID, templateID, publicKey}) => {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
     const form = useRef();
+    mapboxgl.accessToken = mapboxToken;
+
 
     const [emailSent, setEmailSent] = useState(false);
 
@@ -34,7 +37,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_dl2e8rt', 'template_sioaphp', form.current, 'ntxsUWZliG1s1JlJB')
+        emailjs.sendForm(serviceID, templateID, form.current, publicKey)
           .then((result) => {
               setEmailSent(true);
               console.log(result.text);

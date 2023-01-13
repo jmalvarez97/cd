@@ -5,8 +5,11 @@ import Header from "./Components/Header"
 import Nav from "./Components/Nav"
 import Products from './Components/Products'
 import Contact from './Components/Contact';
+import keys from "./env";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +17,12 @@ root.render(
     <Nav />
     <Header />
     <Products/>
-    <Contact/>  
+    <Contact
+      mapboxToken = {keys.mapboxToken}
+      serviceID = {keys.serviceID}
+      templateID = {keys.templateID}
+      publicKey = {keys.publicKey}
+      />  
   </React.StrictMode>
 );
 
