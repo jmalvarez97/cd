@@ -57,7 +57,7 @@ const Contact = () => {
                         <div className={`col-lg-6 ${styles.mapColumn}`}>
                             <div className={`${styles.imageContainer}`}>
 
-                            <h2>Donde nos ubicamos?</h2>
+                            <h2>¿Dónde nos ubicamos?</h2>
 
                             <p>Sector Industrial II - Alberti - Pcia. de Buenos Aires</p>
 

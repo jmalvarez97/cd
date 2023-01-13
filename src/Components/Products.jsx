@@ -77,7 +77,7 @@ const Products = () => {
                     <a className={`btn-solid-lg ${styles.btnSolidLg} ${styles.btnVerMas}`}
                         href={pdf} without rel="noopener noreferrer" target="_blank"
                         >
-                        Consultar todo el catalogo
+                        Consulta el catálogo completo
                     </a>
                 </div> 
             </div> 
