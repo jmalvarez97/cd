@@ -5,7 +5,6 @@ import Header from "./Components/Header"
 import Nav from "./Components/Nav"
 import Products from './Components/Products'
 import Contact from './Components/Contact';
-import keys from "./env";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
@@ -18,10 +17,10 @@ root.render(
     <Header />
     <Products/>
     <Contact
-      mapboxToken = {keys.mapboxToken}
-      serviceID = {keys.serviceID}
-      templateID = {keys.templateID}
-      publicKey = {keys.publicKey}
+      mapboxToken = {process.env.REACT_APP_MAPBOXTOKEN}
+      serviceID = {process.env.REACT_APP_SERVICEID}
+      templateID = {process.env.REACT_APP_TEMPLATEID}
+      publicKey = {process.env.REACT_APP_PUBLICKEY}
       />  
   </React.StrictMode>
 );
