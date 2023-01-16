@@ -1,3 +1,3 @@
-# Chacinados David
+# Chacinados David - static page
 
-Simple pagina estatica que pronto estara alojada en chacinadosdavid.com, mientras tanto la tengo subida [ACA](https://chda.onrender.com/) 
+Simple pagina estatica hecha con react alojada en [](chacinadosdavid.com) 
